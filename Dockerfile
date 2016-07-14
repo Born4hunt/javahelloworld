@@ -8,6 +8,6 @@ RUN mkdir bin
 
 RUN javac -d bin src/HelloWorld.java
 
-RUN apt-get install NGINX
+RUN apt-get install nginx
 
 ENTRYPOINT ["java", "-cp", "bin", "HelloWorld"]
